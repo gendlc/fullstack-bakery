@@ -1,0 +1,102 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+/* Header (horizontal navbar) */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  border-bottom: 2px solid #ccc;
+  background-color: white;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #c50000;
+  text-transform: uppercase;
+}
+
+nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Main layout (sidebar + content) */
+main {
+  display: flex;
+  flex: 1;
+}
+
+/* Sidebar */
+aside {
+  background-color: white;
+  padding: 2rem 1rem;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside li {
+  background-color: #c50000;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Content area */
+article {
+  flex: 1;
+  padding: 2rem;
+}
+
+article h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+article p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Testimonial box */
+.testimonial {
+  background-color: #eee;
+  padding: 1rem;
+  font-style: italic;
+  margin: 2rem 0;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
